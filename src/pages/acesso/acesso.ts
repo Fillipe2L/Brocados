@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams, MenuController } from 'ionic-angular';
 
 
 @Component({
@@ -10,7 +10,8 @@ export class AcessoPage {
   loginForm: Array<{ numero: number, senha: any }>;
   nomeTeste: String;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public menu: MenuController) {
+    menu.swipeEnable(false);
   }
 
   ionViewDidLoad() {
