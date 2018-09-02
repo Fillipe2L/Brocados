@@ -1,13 +1,21 @@
 <ion-content padding="true" hide-nav-bar="true" hide-back-button="true" cache-view="false" class="login-content">
-  <ion-item>
-    <ion-label class="label-input">Telefone</ion-label>
-    <ion-input class="input-text" required type="number" placeholder="(61) 9 9876-5432"></ion-input>
-  </ion-item>
-  <ion-item>
-    <ion-label class="label-input">Senha</ion-label>
-    <ion-input class="input-text" required type="password"></ion-input>
-  </ion-item>
+  <ion-list>
+    <ion-item>
+      <ion-label class="label-input">Telefone</ion-label>
+      <ion-input class="input-text" required type="number" placeholder="(61) 9 9876-5432"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label class="label-input">Senha</ion-label>
+      <ion-input class="input-text" required type="password"></ion-input>
+    </ion-item>
 
-    <ion-button>Entrar</ion-button>
-
+    <div padding-top padding-right full>
+      <button ion-button full margin-left>ENTRAR</button>
+    </div>
+    <div padding-top padding-right text-center full>
+      <a href="#" full margin-left margin-right>Quero me cadastrar</a> | <a href="#" full margin-left>Esqueci a senha</a>
+    </div>
+  </ion-list>
 </ion-content>
+
+<ion-footer style="box-shadow: 0" class="text-version" align="center">Brocados v1.0</ion-footer>
