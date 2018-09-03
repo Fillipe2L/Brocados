@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams, MenuController } from 'ionic-angular';
-import { HomePage } from '../../pages/home/home';
+import { NavController, NavParams, MenuController } from 'ionic-angular/umd';
+import { HomePage } from '../home/home';
 
 
 

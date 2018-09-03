@@ -1,5 +1,7 @@
 {
   "name": "Brocados",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "ionic-angular"
 }

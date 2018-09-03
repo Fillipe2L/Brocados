@@ -1,0 +1,17 @@
+<ion-header>
+    <ion-navbar>
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>FoodTrucks Favoritos</ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content>
+    <ion-list>
+      <button ion-item *ngFor="let fd of list">
+        <ion-icon item-start></ion-icon>
+        <b>{{fd.title}}</b>
+      </button>
+    </ion-list>
+  </ion-content>

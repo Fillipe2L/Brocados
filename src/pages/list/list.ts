@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { FirebaseServiceProvider } from '../../providers/firebase-service';
 
 
 @Component({
@@ -9,9 +10,13 @@ import { NavController, NavParams } from 'ionic-angular';
 export class ListPage {
   selectedItem: any;
   icons: string[];
-  items: Array<{ title: string, note: string, icon: string }>;
+  itensFake: Array<{ title: string, note: string, icon: string }>;
+  itens: Array<{ title: string, note: string, icon: string }>;
+
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+
+
     // If we navigated to this page, we will have an item available as a nav param
     this.selectedItem = navParams.get('item');
 
@@ -19,9 +24,9 @@ export class ListPage {
     this.icons = ['flask', 'wifi', 'beer', 'football', 'basketball', 'paper-plane',
       'american-football', 'boat', 'bluetooth', 'build'];
 
-    this.items = [];
+    this.itensFake = [];
     for (let i = 1; i < 6; i++) {
-      this.items.push({
+      this.itensFake.push({
         title: 'Item ' + i,
         note: 'Item número ' + i + '.',
         icon: this.icons[Math.floor(Math.random() * this.icons.length)]
